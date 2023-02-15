@@ -1,0 +1,9 @@
+-- Schema Version 2
+
+-- Add Nickname Column
+ALTER TABLE users ADD autoproxy_mode TEXT;
+ALTER TABLE users ADD autoproxy      INT; -- Autoproxy member account ID
+
+-- Set Database Version
+DELETE FROM meta;
+INSERT INTO meta VALUES (2);
